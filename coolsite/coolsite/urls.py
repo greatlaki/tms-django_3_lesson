@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from coolsite.women.views import index
+from women.views import *
 
-urlpatterns = [
+urlpatterns = {
     path('admin/', admin.site.urls),
     path('women/', index),
-]
+    path('cats/', categories),
+}
