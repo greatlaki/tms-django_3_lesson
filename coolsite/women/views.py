@@ -7,6 +7,9 @@ def index(request): #HttpRequest
 
 
 def categories(request, catid):
+    if request.POST:
+        print(request.POST)
+
     return HttpResponse(f"<h1>Статьи по категориям</h1><p>{catid}</p>")
 
 
