@@ -11,22 +11,3 @@ class Women(models.Model):
     def __str__(self):
         return self.title
 
-'''
-Read:
-    Women.objects
-        Women.objects.create()
-    Women.objects.all()
-    Women.objects.filter()
-    Women.objects.exlude()
-    Women.objects.get()
-    Women.objects.order_by()
-    
-Update:
-    wu = Women.objects.get(pk=2)
-    wu.title = ''
-    wu.content = ''
-    wu.save()
-
-Delete:
-    wd.delete()
-'''
