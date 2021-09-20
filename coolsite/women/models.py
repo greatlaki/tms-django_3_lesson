@@ -20,4 +20,13 @@ Read:
     Women.objects.exlude()
     Women.objects.get()
     Women.objects.order_by()
+    
+Update:
+    wu = Women.objects.get(pk=2)
+    wu.title = ''
+    wu.content = ''
+    wu.save()
+
+Delete:
+    wd.delete()
 '''
