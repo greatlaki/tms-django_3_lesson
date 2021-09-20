@@ -10,3 +10,14 @@ class Women(models.Model):
 
     def __str__(self):
         return self.title
+
+'''
+Read:
+    Women.objects
+        Women.objects.create()
+    Women.objects.all()
+    Women.objects.filter()
+    Women.objects.exlude()
+    Women.objects.get()
+    Women.objects.order_by()
+'''
