@@ -12,7 +12,12 @@ menu = [{'title':  'О сайте', 'url_name': 'about'},
 
 def index(request):
     posts = Women.objects.all()
-    return render(request, 'women/index.html', {'posts': posts, 'menu':menu, 'title': 'Главная страница'})
+    context = {
+        'posts': posts,
+        'menu': menu,
+        'title': 'Главная страница',
+    }
+    return render(request, 'women/index.html', context=context)
 
 
 def about(request):
