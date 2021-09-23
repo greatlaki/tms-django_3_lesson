@@ -9,7 +9,6 @@ menu = [{'title':  'О сайте', 'url_name': 'about'},
         {'title': 'Войти', 'url_name': 'login'},
 ]
 
-
 def index(request):
     posts = Women.objects.all()
     cats = Category.objects.all()
