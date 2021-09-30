@@ -59,4 +59,5 @@ def show_category(request, cat_id):
         'title': 'Отображение по рубрикам',
         'cat_selected': cat_id,
     }
+
     return render(request, 'women/index.html', context=context)
