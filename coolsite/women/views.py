@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 from django.core.paginator import Paginator
+=======
+>>>>>>> origin
 from django.http import HttpResponse, HttpResponseNotFound, Http404
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
@@ -36,6 +39,7 @@ class WomenHome(DataMixin, ListView):
 #   return render(request, 'women/index.html', context=context)
 
 def about(request):
+<<<<<<< HEAD
     # Вывод элементов списка на странице, для функции
     contact_list = Women.objects.all()
     paginator = Paginator(contact_list, 3)
@@ -43,6 +47,9 @@ def about(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'women/about.html', {'page_obj':page_obj, 'menu': menu, 'title': 'О сайте'})
+=======
+    return render(request, 'women/about.html', {'menu': menu, 'title': 'О сайте'})
+>>>>>>> origin
 
 class AddPage(LoginRequiredMixin, DataMixin, CreateView):
     form_class = AddPostForm

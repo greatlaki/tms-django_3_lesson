@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 from django.db.models.aggregates import Count
 from django.core.cache import caches
+=======
+>>>>>>> origin
 
 from .models import *
 
@@ -10,8 +13,11 @@ menu = [{'title': "О сайте", 'url_name': 'about'},
 ]
 
 class DataMixin:
+<<<<<<< HEAD
         paginate_by = 3 # Количесвто элементов списка на страницу
 
+=======
+>>>>>>> origin
         def get_user_conext(self, **kwargs):
                 context = kwargs
                 cats = Category.objects.annotate(Count('women'))
