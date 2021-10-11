@@ -10,6 +10,7 @@ from .utils import *
 
 
 class WomenHome(DataMixin, ListView):
+    paginate_by = 3
     model = Women # выбирает все записи из таблицы и пытается отобразить в виде списка
     template_name = 'women/index.html'
     context_object_name = 'posts'
