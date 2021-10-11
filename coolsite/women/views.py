@@ -40,7 +40,7 @@ def about(request):
     # Вывод элементов списка на странице, для функции
     contact_list = Women.objects.all()
     paginator = Paginator(contact_list, 3)
-
+# http://127.0.0.1:8000/about/?page=2
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'women/about.html', {'page_obj':page_obj, 'menu': menu, 'title': 'О сайте'})
