@@ -1,5 +1,5 @@
 html, body {
-	font-family: 'Arial';
+	font-family: 'Arial', serif;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -44,7 +44,7 @@ p.link-read-post a {
 div.article-panel {
     background: #eee;
     padding: 5px 10px 5px 10px;
-    box-sizing border-box;
+    box-sizing: border-box;
     overflow: hidden;
     color: #555;
 }
@@ -214,7 +214,7 @@ ul.breadcrumbs {
 	padding: 0;
 	list-style: none;
 	font-size: 20px;
-	font-family: Sans-serif, Arial, Tahoma;
+	font-family: Sans-serif, Arial, Tahoma, serif;
 }
 ul.breadcrumbs li {
 	display: inline-block;
