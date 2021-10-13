@@ -23,7 +23,7 @@
 				<li class="last"> {{user.username}} | <a href="{% url 'logout' %}">Выйти</a></li>
 				{% else %}
 				<li class="last"><a href="{% url 'register' %}">Регистрация</a> | <a href="{% url 'login' %}">Войти</a></li>
-				{% endid %}
+				{% endif %}
 			</ul>
 			<div class="clear"></div>
 		</div>

@@ -151,6 +151,8 @@ class RegisterUser(DataMixin, CreateView):
         user = form.save()
         login(self.request, user)
         return redirect('home')
+
+
 class LoginUser(DataMixin, LoginView):
     form_class = LoginUserForm
     template_name = 'women/login.html'
